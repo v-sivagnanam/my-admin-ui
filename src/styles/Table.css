@@ -1,0 +1,165 @@
+.container {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .delete-selected {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #f0f0f0;
+  }
+
+  /* .action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+  
+  .action-button {
+    margin: 5px; /* Adjust as needed */
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .no-data {
+    text-align: center;
+    padding: 10px;
+    color: #999;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .search-container {
+      flex-direction: column;
+    }
+  
+    .search-container input[type="text"] {
+      margin-bottom: 10px;
+    }
+  
+    .pagination button {
+      margin: 5px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    .delete-selected {
+      margin-top: 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.edit {
+    background-color: #28a745;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+  }
+  
+  button.save,
+  button.cancel {
+    background-color: #007bff;
+  }
+  
+  button.save:hover,
+  button.cancel:hover {
+    background-color: #0056b3;
+  }
+  
